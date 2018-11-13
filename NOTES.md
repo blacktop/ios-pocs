@@ -12,6 +12,8 @@
 - http://iphonedevwiki.net/index.php/Debugserver
 - https://kov4l3nko.github.io/blog/2018-05-25-my-experience-with-lldb-and-electra-jb/
 - https://lldb.llvm.org/lldb-gdb.html
+- https://github.com/gdbinit/lldbinit
+- https://github.com/hugsy/gef
 
 ## jailbreaks for 11.2
 
@@ -27,7 +29,7 @@
 - https://bazad.github.io/2018/11/introduction-userspace-race-conditions-ios/
 - https://bazad.github.io/2018/10/bypassing-platform-binary-task-threads/
 
-## running custom binary on jb idevice
+## Running custom binary on jb iDevice
 
 - https://sskaje.me/platform-application/
 
