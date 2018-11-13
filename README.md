@@ -49,24 +49,24 @@ $ make all
 #### In ssh session on iDevice
 
 ```bash
-$ /Developer/usr/bin/debugserver localhost:6666 --waitfor evil
+iPod-touch:~ root# /Developer/usr/bin/debugserver localhost:6666 --waitfor evil
 ```
 
-#### In VSCode (build bin)
+#### In VSCode _(build binary)_
 
 `Command+Shift+B`
 
-#### Now Start Debugging (remember to set a breakpoint)
+#### Now Start Debugging _(remember to set a breakpoint)_
 
 Press `F5` or use GUI (you will need to continue past initial trap)
 
 #### In DEBUG CONSOLE
 
-Let's wake this guy up early :smiling_imp:
+Let's wake this lil guy up early :smiling_imp:
 
 ```lldb
-thread jump --line 16
-continue
+> thread jump --line 16
+> continue
 ```
 
 ## Misc
@@ -77,12 +77,12 @@ continue
 $ wget http://newosxbook.com/tools/binpack64-256.tar.gz
 $ scp -P 2222 root@localhost:/
 $ ssh -p 2222 root@localhost
-$ cd /
-$ tar -kxvf binpack64-256.tar.gz
+iPod-touch:~ root# cd /
+iPod-touch:~ root# tar -kxvf binpack64-256.tar.gz
 ```
 
 ### Stop iOS Auto-Updating
 
 ```bash
-echo "127.0.0.1    mesu.apple.com" >> /etc/hosts
+iPod-touch:~ root# echo "127.0.0.1    mesu.apple.com" >> /etc/hosts
 ```
