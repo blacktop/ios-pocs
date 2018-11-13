@@ -1,0 +1,34 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Remote launch",
+      "type": "lldb",
+      "request": "custom",
+      "targetCreateCommands": ["target create ${workspaceFolder}/evil"],
+      "processCreateCommands": [
+        "platform select remote-ios",
+        // "process connect connect://localhost:6666",
+        "gdb-remote localhost:6666",
+        "add-dsym ${workspaceFolder}/evil.dSYM"
+      ]
+      // "preLaunchTask": "build"
+    },
+    {
+      "name": "(lldb) Launch",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/cparse",
+      "args": ["-a", "-b"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": false,
+      "MIMode": "lldb",
+      "preLaunchTask": "build"
+    }
+  ]
+}
