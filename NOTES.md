@@ -5,6 +5,7 @@
 - https://developer.apple.com/videos/play/wwdc2018/414/
 - https://www.raywenderlich.com/2805-demystifying-ios-application-crash-logs
 - https://developer.apple.com/library/archive/technotes/tn2151/_index.html
+- https://github.com/oleavr/frida-gum/blob/master/gum/backend-darwin/gumsymbolutil-darwin.c
 
 ## lldb
 
@@ -14,6 +15,8 @@
 - https://lldb.llvm.org/lldb-gdb.html
 - https://github.com/gdbinit/lldbinit
 - https://github.com/hugsy/gef
+- https://github.com/4ch12dy/xia0LLDB
+- https://github.com/DerekSelander/LLDB
 
 ## jailbreaks for 11.2
 
