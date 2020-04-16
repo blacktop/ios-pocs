@@ -5,13 +5,27 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "lldb",
+      "request": "custom",
+      "name": "Custom launch",
+      "targetCreateCommands": [
+        "target create -c '/Users/blacktop/Library/Developer/Xcode/iOS DeviceSupport/13.4 (17E255)/Symbols/System/Library/Frameworks/WebKit.framework/WebKit'"
+      ],
+      "processCreateCommands": [
+        "platform select remote-ios",
+        "process connect connect://localhost:6666",
+        // "gdb-remote localhost:6666",
+        "settings set target.inherit-env false",
+      ]
+    },
+    {
       "name": "Remote launch",
       "type": "lldb",
       "request": "custom",
       "targetCreateCommands": ["target create ${workspaceFolder}/evil"],
       "processCreateCommands": [
-        "platform select remote-ios",
-        // "process connect connect://localhost:6666",
+        // "platform select remote-ios",
+        // // "process connect connect://localhost:6666",
         "gdb-remote localhost:6666",
         "add-dsym ${workspaceFolder}/evil.dSYM"
       ]

@@ -48,3 +48,21 @@
 
 - https://github.com/xerub/mgrep
 - https://github.com/mountainstorm/MobileDevice
+
+## RE
+
+- https://github.com/gaasedelen/lighthouse/releases
+
+## Frida
+
+- https://awakened1712.github.io/hacking/hacking-frida/
+- https://codeshare.frida.re/@oleavr/who-does-it-call/
+- https://github.com/enovella/r2frida-wiki
+- https://github.com/frida/frida-core/pull/291/files
+- https://github.com/frida/frida-gum/blob/d10a077be7faac5ec7b4d44917019eb30a2d21ab/gum/backend-darwin/gumdarwinsymbolicator.c
+- https://github.com/oleavr/frida-agent-example
+- https://github.com/frida/frida-core/blob/e2a8f91fd35aef6a3567246d2aed0e2f08bda1ca/src/fruity/fruity-host-session.vala#L771-L808
+
+## SHSH
+
+- https://github.com/80036nd/FutureRestore-Script

@@ -52,3 +52,6 @@ Mkfile.old
 dkms.conf
 
 evil
+*.ipsw
+dbg/iPod9,1_N112AP_17E255
+debugserver*

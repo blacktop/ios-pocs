@@ -1,18 +1,11 @@
+#define __STDC_FORMAT_MACROS
+#include <inttypes.h>
 #include <stdio.h>
 #include <unistd.h>
 
 int main(int argc, char const *argv[]) {
-    int i = 20;
-    printf("Sooooo tired, I guess I'll take a lil power snooze...\n");
-    while (i) {
-        printf("Zzzz... Zzzzz...\n");
-        if (i < 3) {
-            printf("<<< TweetSakka >>>");
-            break;
-        }
-        i--;
-        sleep(1);
-    }
-    printf("\nWhat the fuck was that?!?!!\n");
+    uint64_t *shared_cache_rx_base = NULL;
+    syscall(294, &shared_cache_rx_base);
+    printf("shared_cache_rx_base: %"PRIu64"\n", shared_cache_rx_base);
     return 0;
 }
